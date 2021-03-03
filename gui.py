@@ -9,6 +9,12 @@ root.geometry("700x700")
 
 # TODO: add scrollbar
 
+canvas = tk.Canvas(root, height=700, width=700, bg="#ccc")
+canvas.pack()
+
+frame = tk.Frame(root, bg="white")
+frame.place(relwidth=1, relheight=0.8, rely=0.2)
+
 input_label = Label(root, text="Type in search term")
 input_label.place(x=285, y=30)
 job_name_input = Entry(root, bd=5)
